@@ -1,10 +1,5 @@
 package com.laptrinhjavaweb.dto;
 
-import javax.persistence.Column;
-import javax.xml.soap.SAAJResult;
-import java.util.ArrayList;
-import java.util.List;
-
 public class BuildingDTO extends AbstractDTO {
 
     private String name;
