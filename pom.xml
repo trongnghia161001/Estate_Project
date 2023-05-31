@@ -14,10 +14,11 @@
 	</parent>
 
 	<properties>
-		<mysql.version>8.0.13</mysql.version>
+		<mysql.version>8.0.29</mysql.version>
 		<sitemesh.version>2.4.2</sitemesh.version>
 		<displaytag.version>1.2</displaytag.version>
 		<java.version>1.8</java.version>
+		<xstream.version>1.4.15</xstream.version>
 	</properties>
 
 	<dependencies>
@@ -115,6 +116,11 @@
 				<configuration>
 					<executable>true</executable>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.2</version>
 			</plugin>
 		</plugins>
 	</build>

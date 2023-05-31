@@ -1,10 +1,9 @@
 package com.laptrinhjavaweb.api.admin;
 
-import com.laptrinhjavaweb.dto.BuildingDTO;
 import com.laptrinhjavaweb.dto.CustomerDTO;
+import com.laptrinhjavaweb.dto.request.TransactionRequest;
 import com.laptrinhjavaweb.dto.response.ResponseDTO;
 import com.laptrinhjavaweb.dto.response.StaffResponseDTO;
-import com.laptrinhjavaweb.dto.request.TransactionRequest;
 import com.laptrinhjavaweb.input.AssignmentInput;
 import com.laptrinhjavaweb.service.impl.AssignmentcustomerService;
 import com.laptrinhjavaweb.service.impl.CustomerService;
@@ -14,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.EntityManager;
 import java.util.List;
 
 @RestController(value = "customerAPIOfAdmin")
