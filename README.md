@@ -1,4 +1,4 @@
-# Estate_SpringBoot_MVC
+![Aspose Words 5ad7e112-a02c-400c-9614-89c75f420ebc 001](https://github.com/trongnghia161001/Estate_SpringBoot_MVC/assets/75027006/9e3bbf53-6078-4528-b034-0b6dfcd4d5a2)# Estate_SpringBoot_MVC
 
 REAL ESTATE COMPANY MANAGEMENT
 
@@ -14,10 +14,11 @@ Execution instructions:
 
 Step 1: Before running the program, make sure to install all the required libraries in the pom.xml file.
 
+![Aspose Words 5ad7e112-a02c-400c-9614-89c75f420ebc 001](https://github.com/trongnghia161001/Estate_SpringBoot_MVC/assets/75027006/189f3867-a380-406a-85fc-eddbd7a49665)
 - Spring Boot version 1.5.22.RELEASE
 - Tomcat and JSTL for JSP
 - Apache POI
-![Alt text](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.001-1.jpeg)
+
 Step 2: Open the Terminal and run the command "mvn clean install -DskipTests" as shown in the image.
 
 Step 3: Since this project uses a WAR file, an external Tomcat server is required to run the program. To add an external Tomcat server, follow these steps:
