@@ -1,250 +1,125 @@
 # Estate_SpringBoot_MVC
 
+REAL ESTATE COMPANY MANAGEMENT
 
-**QUẢN LÝ NHÂN SỰ CỦA CÔNG TY BẤT ĐỘNG SẢN**
+To build a web application using JSP and Servlet in the MVC model, follow these installation instructions:
 
-Xây dựng một ứng dụng web bằng JSP, SERVLET theo mô hình MVC **Hướng dẫn cài đặt** :
+1. Download and install Tomcat 8.5.
+2. Download and install Maven 3.6.0.
+3. Download and install Java 8.
+4. Download and install IntelliJ.
+5. Download MySQL 8.0.29.
 
-- Dowload và cài đặt Tomcat 8.5
-- Dowload và cài đặt Maven 3.6.0
-- Dowload và cài đặt Java 8
-- Dowload và cài đặt Intellij
-- Dowload MySQL 8.0.29
+Execution instructions:
 
-**Hướng dẫn thực thi chương trình :**
+Step 1: Before running the program, make sure to install all the required libraries in the pom.xml file.
 
-- Bước 1: Trước khi thực thi chương trình thì phải cài đặt tất cả các thư viện cần có trong file pom.xml
-
+- Spring Boot version 1.5.22.RELEASE
+- Tomcat and JSTL for JSP
+- Apache POI
 ![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.001.jpeg)
 
 ![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.002.jpeg)
 
-Spring boot version 1.5.22.RELEASE
+Step 2: Open the Terminal and run the command "mvn clean install -DskipTests" as shown in the image.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.003.jpeg)
+Step 3: Since this project uses a WAR file, an external Tomcat server is required to run the program. To add an external Tomcat server, follow these steps:
 
-Tomcat, JSTL for JSP
+- Click on Edit Configurations.
+- Click on the plus icon.
+- Scroll down and select Tomcat Server -> Local.
+- Configure it as shown in the image:
+   - Name: Set a name for the Tomcat server.
+   - Tomcat Home: Specify the path to the downloaded Apache Tomcat directory.
+   - Tomcat base directory: Specify the path to the downloaded Apache Tomcat directory.
+- Click OK.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.004.jpeg)
+Next, click on Fix, and a dialog box will appear. Choose "war exploded" as shown in the image.
 
-Apache POI
+Remove the application context data from the Application context field.
 
-- Bước 2: Sau đó mở Terminal và chạy câu lệnh “mvn clean install -DskipTests” như trong hình:
-- Bước 3: Vì bài này em sử dụng file war nên phải dụng Tomcat ngoài để run chương trình, do đó để run được cần phải add Tomcat ngoài vào như sau:
-1. Bấm vào Edit Configurations như hình:
+After removing the data, click on the Server tab and adjust the "On 'Update' action" to "Update classes and resource" as shown in the image.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.005.jpeg)
+Finally, click Apply -> OK to finish configuring Tomcat.
 
-2. Sau đó bấm vào dấu cộng như hình:
+The project contains all the necessary files designed according to the MVC model.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.006.jpeg)
+There are two ways to start the program: run and debug.
 
-3. Kéo xuống và chọn vào Tomcat Server -> Local
+- Left arrow: Used to run the program.
+- Right arrow: Used to run the program with debugging.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.007.jpeg)
+Please note that before the program can run successfully, you need to create a database.
 
-4. Chọn Configure như trên hình:
+Instructions for creating a database:
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.008.jpeg)
+Create a database named "bat_dong_san".
 
-5. Sau đó sẽ hiện ra hình ảnh sau:
+After creating the database, update the following code snippet with the correct information on your machine:
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.009.jpeg)
+Note:
+Only create a database named "bat_dong_san." The tables in the database don't need to be created manually because they will be automatically generated when running the program.
+If you want to quickly create tables with pre-existing data to execute the program, go to the database folder -> batdongsan.sql and execute it in MySQL (this is the data our team has explored).
 
-Trong đó:
+Program usage instructions:
 
-+ Name: là mình tự đặt tên theo tên và version của Tomcat
+Build the application to provide the following system functions:
 
-mà mình cài đặt vào
+3.1 List all buildings.
 
-+ Tomcat Home: Trỏ đến thư mục apache-tomcat mà ta đã
+3.2 View building details.
 
-tải về
+3.3 Search for building information based on criteria.
 
-+ Tomcat base directory cũng vậy: Trỏ đến thư mục
+3.4 Add a new building.
 
-apache-tomat mà ta đã tải về
+3.5 Update building information.
 
-6. Sau đó bấm OK như hình:
+3.6 Delete building information.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.010.jpeg)
+3.7 Assign a building to a specific employee.
 
-7. Tiếp theo bấm vào Fix như hình:
+3.8 Manage customers.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.011.jpeg)
+3.9 Search for customers based on criteria.
 
-8. Sau khi bấm vào Fix sẽ hiện ra giao diện sau:
+3.10 Add a new customer.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.012.jpeg)
+3.11 Update customer information and view transaction history between the customer and employees.
 
-Lưu ý chọn vào: war exploded như hình
+3.12 Assign a customer to a specific employee.
 
-9. Sau đó xóa dữ liệu ở dòng Application context:
+3.13 Delete a customer.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.013.jpeg)
+3.14 Manage employees.
 
-10. Sau khi xóa xong ta sẽ bấm vào lại mục Server như hình sau:
+3.15 Search for employees based on criteria.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.014.jpeg)
+3.16 Add a new employee.
 
-11. Sau đó hãy để ý và điều chỉnh On ‘Update’ action : Update
+3.17 Update employee information.
 
-classes and resource theo hình mẫu sau:
+3.18 Delete an employee.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.015.jpeg)
+3.19 View admin information.
 
-12. Cuối cùng ta đã cấu hình hoàn chỉnh Tomcat với hình ảnh
+3.20 Change admin password.
 
-sau:
+3.21 Log out of the system.
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.016.jpeg)
+3.22 Export search results for buildings to an Excel file for easier management and tracking. For example, search using the keyword "Đà Nẵng
 
-Sau đó bấm Apply -> OK để kết thúc quá trình cấu hình Tomcat
+".
 
-13. Đây là tất cả các file có trong project và được thiết kế theo mô
+Image of the search results on the interface:
 
-hình MVC:
+Image of the exported Excel file results:
 
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.017.jpeg)
+3.23 Login.
 
-14. Có 2 cách để start chương trình đó là run và debug đều được
 
-cả:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.018.jpeg)
-
-Mũi tên bên trái: là dùng để run chương trình.
-
-Mũi tên bên phải: cũng dùng để run chương trình nhưng có thêm
-
-debug nữa.
-
-- Trên đây là tất cả những gì cần làm trước khi start chương trình:
-- Lưu ý:
-- Trước khi chương trình chạy được thì phải tạo database
-
-nữa nhé!
-
-**Hướng dẫn tạo database :**
-
-+ Tạo cơ sở dữ liệu có tên: bat\_dong\_san
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.019.png)
-
-+ Sau khi tạo thì fix lại thông tin trong đoạn code sau theo đúng thông tin trên máy tình của mình:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.020.jpeg)
-
-Lưu ý:
-
-- Chỉ cần tạo cơ sở dữ liệu có tên là bat\_dong\_san, còn các table trong cở sở dữ liệu không cần tạo vì sao khi run chương trình thì các table đó sẽ tự động được tạo
-- Còn nếu muốn tạo nhanh các table có sẵn dữ liệu để thực thi chương trình thì vào thư mục database -> batdongsan.sql rồi copy đưa qua MySQL để thực thi (đây là dữ liệu mà nhóm em đã explorer ra ạ):
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.021.jpeg)
-
-**Hướng dẫn sử dụng chương trình**
-
-Xây dựng ứng dụng cung cấp các chức năng của hệ thống như sau:
-
-- 3.1 Cho phép liệt kê tất cả các tòa nhà
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.022.jpeg)
-
-- 3.3 Cho phép tìm kiếm thông tin theo các tiêu chí của tòa nhà
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.023.jpeg)
-
-- 3.4 Thêm tòa nhà
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.024.jpeg)
-
-- 3.5 Cho phép cập nhật thông tin của tòa nhà
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.025.jpeg)
-
-- 3.6 Xoá thông tin của tòa nhà
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.026.jpeg)
-
-- 3.7. Giao tòa nhà cho nhân viên nào quản lý
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.027.jpeg)
-
-- 3.8. Quản lý khách hàng
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.028.jpeg)
-
-3\.9. Tìm kiếm khách hàng theo tiêu chí:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.029.jpeg)
-
-3\.10: Thêm mới khách hàng:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.030.jpeg)
-
-3\.11: Cập nhập thông tin khách hàng và xem lịch sử giao dịch giữa khách hàng với nhân viên:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.031.jpeg)
-
-3\.12: Giao khách hàng cho nhân viên quản lý:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.032.jpeg)
-
-3\.13: Xóa khách hàng:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.033.jpeg)
-
-3\.14: Quản lý nhân viên
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.034.jpeg)
-
-3\.15: Tìm kiếm nhân viên theo tiêu chí:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.035.jpeg)
-
-3\.16: Thêm mới nhân viên:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.036.jpeg)
-
-3\.17: Cập nhập lại thông tin của nhân viên:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.037.jpeg)
-
-3\.18: Xóa nhân viên:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.038.jpeg)
-
-3\.19: Xem thông tin của admin:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.039.jpeg)
-
-3\.20: Đổi mật khẩu của admin:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.040.jpeg)
-
-3\.21: Đăng xuất khỏi hệ thống
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.041.jpeg)
-
-3\.22: Xuất kết quả tìm kiếm của tòa nhà ra file excel để dễ quản lý và theo dõi hơn: Ví dụ: tìm kiếm theo từ khóa “Đà Nẵng”
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.042.jpeg)
-
-Hình ảnh kết quả trên giao diện là:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.043.jpeg)
-
-Hình ảnh kết quả xuất file excel:
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.044.jpeg)
-
-3\.23: Login
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.045.jpeg)
-
-Lưu ý:
-
-- Để sử dụng chương trình phải thực hiện đăng nhập vào hệ thống với:
-+ Tên tài khoản: nguyenvana
-+ Mật khẩu: 123456
-- Như vậy nhóm em đã hoàn thành đầy đủ tất cả các yêu cầu của đề bài ạ.
+Note:
+To use the program, you need to log in to the system with the following credentials:
+Username: nguyenvana
+Password: 123456
+With that, our team has completed all the requirements of the assignment.
