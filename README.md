@@ -111,6 +111,7 @@ If you want to quickly create tables with pre-existing data to execute the progr
 
 Program usage instructions:
 Build the application to provide the following system functions:
+
 3.1 List all buildings.
 
 ![Aspose Words 5ad7e112-a02c-400c-9614-89c75f420ebc 022](https://github.com/trongnghia161001/Estate_SpringBoot_MVC/assets/75027006/1fd5767f-cf40-48ab-96bf-085cf202d878)
