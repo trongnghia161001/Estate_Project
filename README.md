@@ -1,6 +1,5 @@
 # Estate_SpringBoot_MVC
 
-**Lập trình mạng**
 
 **QUẢN LÝ NHÂN SỰ CỦA CÔNG TY BẤT ĐỘNG SẢN**
 
