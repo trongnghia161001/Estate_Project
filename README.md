@@ -17,10 +17,7 @@ Step 1: Before running the program, make sure to install all the required librar
 - Spring Boot version 1.5.22.RELEASE
 - Tomcat and JSTL for JSP
 - Apache POI
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.001.jpeg)
-
-![](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.002.jpeg)
-
+![Alt text](Aspose.Words.5ad7e112-a02c-400c-9614-89c75f420ebc.001-1.jpeg)
 Step 2: Open the Terminal and run the command "mvn clean install -DskipTests" as shown in the image.
 
 Step 3: Since this project uses a WAR file, an external Tomcat server is required to run the program. To add an external Tomcat server, follow these steps:
